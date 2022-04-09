@@ -34,8 +34,8 @@ url: 'https://maikonaraujo.github.io'
 github:
   username: maikonaraujo             # change to your github username
 
-twitter:
-  username: twitter_username            # change to your twitter username
+# twitter:
+#   username: twitter_username            # change to your twitter username
 
 social:
   # Change to your full name.
@@ -45,9 +45,9 @@ social:
   links:
     # The first element serves as the copyright owner's link    
     - https://github.com/maikonaraujo       # change to your github homepage
+    - https://www.linkedin.com/in/maikonaraujo
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
 
 google_site_verification:               # fill in to your verification string
 
@@ -82,7 +82,7 @@ theme_mode:   # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: '/assets/img/foto.jpg'
 
 # boolean type, the global switch for ToC in posts.
 toc: true
@@ -163,6 +163,10 @@ defaults:
       path: assets/js/dist
     values:
       swcache: true
+  - scope:
+      path: assets/img
+    values:
+      image: true
 
 sass:
   style: compressed
